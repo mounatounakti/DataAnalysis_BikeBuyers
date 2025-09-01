@@ -19,29 +19,38 @@ Here's the steps I followed to prepare the data:
   - Marital Status: replaced `M/S` with `Married/Single`.  
 - **Converted income values** from currency to number format to allow easy calculations.  
 - **Grouped commute distances** into categories using a nested `IF` formula:  
-  - `0-1` or `1-2 Miles` → *Short Distance*  
-  - `2-5` or `5-10 Miles` → *Intermediate Distance*  
-  - `10+ Miles` → *Long Distance*  
+  - `0-1` or `1-2 Miles` → `Short Distance`  
+  - `2-5` or `5-10 Miles` → `Intermediate Distance`    
+  - `10+ Miles` → `Long Distance`    
 - **Grouped ages** into categories:  
-  - `< 31` → *Adolescent*  
-  - `31–55` → *Middle Age*  
-  - `> 55` → *Old*  
+  - `< 31` → `Adolescent`    
+  - `31–55` → `Middle Age`  
+  - `> 55` → `Old`  
 - **Verified data integrity** to ensure no duplicates or inconsistent values after cleaning.
   
-## Data Visualization 
-### a) Pivot Tables
+## 📊 Data Visualization 
+### 1. Pivot Tables
 I start creating pivot tables to summarize data and prepare for visualization, with the focus in these features:    
 `Gender 👩‍🦱👨`  `Age category 🎂`  `Marital Status 💍`  `Cars owned 🚗`  `Commute distance 🚶‍♂️`  `Income 💵`  
 
-### b) Charts
+### 2. Charts
 Now, from pivot tables I created the following charts:  
-![Males purchased slightly more bikes (only 2.2% difference)](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/3105cb16ffaac7281c9d78e71694f1dbdba068ed/Src/1.png)  
-→ Males purchased slightly more bikes (only 2.2% difference).  
- 
-→ Middle-aged people purchase bikes far more than adolescents or older customers.  
-→ Married males purchase more bikes than married females, but single females purchase more than single males.  
-→ People with short commutes purchase more bikes than those with longer commutes.  
+![1](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/3105cb16ffaac7281c9d78e71694f1dbdba068ed/Src/1.png)   
+→ Males purchased slightly more bikes (only 2.2% difference). 
+
+ ![2](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/6e4eccf2db385e8e14f3dbb4e9cd58b94c6cf6dc/Src/2.png)  
+→ Middle-aged people purchase bikes far more than adolescents or older customers. 
+
+ ![3](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/6e4eccf2db385e8e14f3dbb4e9cd58b94c6cf6dc/Src/3.png)  
+→ Married males purchase more bikes than married females, but single females purchase more than single males. 
+
+ ![4](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/6e4eccf2db385e8e14f3dbb4e9cd58b94c6cf6dc/Src/4.png)  
+→ People with short commutes purchase more bikes than those with longer commutes.
+
+ ![5](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/6e4eccf2db385e8e14f3dbb4e9cd58b94c6cf6dc/Src/5.png)  
 → People who own 2 cars are surprisingly top bike buyers.  
+
+ ![6](https://github.com/mounatounakti/DataAnalysis_BikeBuyers/blob/6e4eccf2db385e8e14f3dbb4e9cd58b94c6cf6dc/Src/6.png)  
 → Purchases peak around $60,000 income, then decline as income rises; males consistently purchase slightly more than females.  
 
 ## Conclusion
